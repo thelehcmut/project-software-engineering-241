@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = (props: any) => {
     type MenuItem = Required<MenuProps>['items'][number];
     const { isLogin } = props;
-    const items: MenuItem[] = [
+    const items: MenuItem[] = [ 
         {
             label: 'logo',
             key: 'logo',
@@ -38,7 +38,8 @@ const Header = (props: any) => {
         <Menu
             mode="horizontal"
             items={items}
-            style={{ position: 'fixed', width: '100%', zIndex: 100 }}
+            className="header"
+            style={{  position: 'fixed', width: '100%', zIndex: 100 }}
         />
     );
 }

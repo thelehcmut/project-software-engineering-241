@@ -13,6 +13,7 @@ import HomePage from './pages/home.tsx';
 import StorePage from './pages/store.tsx';
 import StoreManagement from './pages/managerStore.tsx';
 import StoreDeletion from './pages/deleteStore.tsx';
+import DetailProduct from './pages/detailProduct.tsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +59,7 @@ const router = createBrowserRouter([
       <Header
         isLogin={true}
       />
+      <DetailProduct />
     </>
   }
   ,
