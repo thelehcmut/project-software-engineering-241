@@ -98,6 +98,15 @@ const router = createBrowserRouter([
       />
       <StoreDeletion />
     </>
+  },
+  {
+    path: "payment",
+    element: <>
+      <Header
+        isLogin={true}
+      />
+      <HomePage />
+    </>
   }
 
 ]);
