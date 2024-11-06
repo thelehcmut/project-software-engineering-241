@@ -1,0 +1,238 @@
+/* ShoppingCart.module.css */
+
+.shoppingCart {
+  max-width: 1240px;
+  width: 100%;
+  margin: 60px auto 0;
+  background-color: #f9f9f9;
+  
+  box-sizing: border-box;
+  padding-bottom: 80px;
+}
+.productcart {
+  
+  border: 2px solid #000000;
+  
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #eee;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.2rem;
+}
+
+.cartHeader span:nth-child(1) {
+  flex: 2; /* Sản phẩm */
+}
+
+.cartHeader span:nth-child(2) {
+  flex: 2; /* Đơn giá */
+  text-align: right;
+}
+
+.cartHeader span:nth-child(3) {
+  flex: 2; /* Số lượng */
+  text-align: right;
+}
+
+.cartHeader span:nth-child(4) {
+  flex: 2; /* Thành tiền */
+  text-align: right;
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between;
+  padding: 20px 30px;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.cartInfo {
+  display: flex;
+  align-items: center;
+  flex: 10;
+  width: 100%;
+}
+
+.cartCheckbox {
+  margin-right: 20px;
+}
+
+.cartImage {
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cartDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartName {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.cartVariant {
+  font-size: 1rem;
+  color: #777;
+}
+
+.cartPricing {
+  display: flex;
+  flex: 7; /* Total flex for pricing */
+  justify-content: space-between;
+  margin-left: 10px;
+  gap: 30px; /* Adjust spacing between pricing elements */
+  width: 100%;
+}
+
+.cartPrice {
+  flex: 1; /* Matches Đơn giá */
+  text-align: right;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cartQuantity {
+  flex: 1.5; /* Matches Số lượng */
+  text-align: right;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cartTotal {
+  flex: 2; /* Matches Thành tiền */
+  text-align: right;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.shippingSection {
+  width: 100%;
+  margin-top: 15px; /* Add space above the shipping section */
+}
+
+.extraSections {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.extraSections > :last-child {
+  margin-right: 0;
+}
+
+.orderSummary {
+  margin-bottom: 20px; /* Add bottom margin to OrderSummary */
+}
+
+.mt {
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 1240px;
+  overflow: hidden;
+  font-family: Lato, sans-serif;
+  padding: 27px 0;
+  border: 1px solid #000;
+  margin-top: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: left; /* Align text to the left */
+  margin-left: auto; /* Push the container to the right */
+}
+
+.mt h4 {
+  margin-right: 63px;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 11px;
+}
+
+.mt button {
+  width: 100%; /* Make button full width */
+  padding: 1rem; /* Increase padding */
+  font-size: 1.2rem; /* Increase font size */
+  background-color: #28a745; /* Set button background color */
+  color: #fff; /* Set button text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  margin: 36px 63px 0 0;
+  max-width: 1114px; 
+}
+
+.mt button:hover {
+  background-color: #218838; /* Darken button color on hover */
+}
+
+@media (max-width: 768px) {
+  .cartHeader,
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cartHeader span,
+  .cartPrice,
+  .cartQuantity,
+  .cartTotal {
+    width: 100%;
+    text-align: left;
+    margin: 5px 0;
+  }
+
+  .cartPricing {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .extraSections {
+    flex-direction: column;
+  }
+
+  .extraSections > * {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .extraSections > :last-child {
+    margin-bottom: 0;
+  }
+
+  .mt {
+    max-width: 100%;
+    margin-top: 40px;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .mt h4 {
+    margin-right: 0;
+  }
+
+  .mt button {
+    margin: 36px auto 0;
+    width: 100%;
+  }
+}

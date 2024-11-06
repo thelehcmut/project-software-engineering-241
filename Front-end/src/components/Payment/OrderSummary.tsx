@@ -23,7 +23,7 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({ totalAmount, totalShippingC
       </div>
       <div className={styles.summaryItem}>
         <span className={styles.summaryLabel}>Tổng cộng mã giảm giá</span>
-        <span className={styles.summaryValue}>-{(totalDiscount).toLocaleString()} VNĐ</span>
+        <span className={styles.summaryValue}>-{formattedTotalDiscount} VNĐ</span>
       </div>
       <div className={styles.summaryTotal}>
         <span className={styles.totalLabel}>Tổng thanh toán</span>
