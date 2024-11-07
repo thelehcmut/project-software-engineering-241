@@ -180,8 +180,8 @@ const PaymentMethodSection: React.FC = () => {
 
         {selectedPaymentMethod === 3 && (
           <div className={styles.amountDetails}>
-            <h3>Số Tiền</h3>
-            <p>₫100,000</p>
+            <h3>Thanh toán khi nhân hàng</h3>
+            <p>khi nhận hàng, hãy thanh toán cho shipper</p>
           </div>
         )}
       </div>
