@@ -16,6 +16,8 @@ import StoreDeletion from './pages/deleteStore.tsx';
 import DetailProduct from './pages/detailProduct.tsx';
 import PaymentPage from './pages/payment.tsx';
 import ShoppingCart from './pages/shoppingcart.tsx';
+import CreateStore from './pages/createStore.tsx';
+import AccountManagement from './pages/managerAccount.tsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -80,7 +82,7 @@ const router = createBrowserRouter([
       <Header
         isLogin={true}
       />
-      <StorePage />
+      <CreateStore />
     </>
   },
   {
@@ -117,6 +119,15 @@ const router = createBrowserRouter([
         isLogin={true}
       />
       <ShoppingCart />
+    </>
+  },
+  {
+    path: "/account",
+    element: <>
+      <Header
+        isLogin={false}
+      />
+      <AccountManagement />
     </>
   }
 ]);
